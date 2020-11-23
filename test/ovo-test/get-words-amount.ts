@@ -3,7 +3,7 @@ import { getWordsAmount } from '../../src/ovo-test/get-words-amount'
 import { lorem } from '../../src/ovo-test/lorem-ipsum'
 
 describe('getWords', () => {
-  test('should return array of words in string', () => {
+  test('should return amount of words in string as number', () => {
     expect(getWordsAmount(getWords(lorem))).toBe(260)
   })
 })
